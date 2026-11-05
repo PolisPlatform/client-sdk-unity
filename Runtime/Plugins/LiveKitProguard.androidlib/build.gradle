@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace "io.livekit.unity.proguard"
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 26
+        consumerProguardFiles 'proguard-rules.txt'
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}

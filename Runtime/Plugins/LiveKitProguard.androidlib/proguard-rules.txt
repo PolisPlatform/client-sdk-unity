@@ -1,0 +1,2 @@
+# libwebrtc.jar references this class but doesn't contain it. Only JniZero.setJniClassLoader uses it, and nothing calls that.
+-dontwarn livekit.org.jni_zero.JniZeroJni
